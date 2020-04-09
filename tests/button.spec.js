@@ -1,9 +1,6 @@
-import chai, { expect } from 'chai'
-import sinonChai from 'sinon-chai'
+import { expect } from 'chai'
 import Button from '@/components/button/button.vue'
 import { shallowMount } from '@vue/test-utils'
-
-chai.use(sinonChai)
 
 describe('Button.vue', () => {
   it('存在.', () => {
