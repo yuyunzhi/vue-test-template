@@ -8,7 +8,7 @@ title: 安装
 - 下载仓库代码
 
 ```
-git clone git@github.com:yuyunzhi/y-components.git
+xxxxxxxxx
 ```
 
 - 安装依赖

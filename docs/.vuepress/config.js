@@ -1,6 +1,6 @@
 module.exports = {
-    base: '/y-components/',
-    title: 'Y-Components',
+    base: '/blackboard-components/',
+    title: '晓黑板UI库',
     description: 'Just playing around',
     themeConfig: {
         sidebar: [
@@ -14,21 +14,6 @@ module.exports = {
                 title:'组件',
                 children:[
                     '/components/button',
-                    '/components/input',
-                    '/components/tabs',
-                    '/components/grid',
-                    '/components/layout',
-                    '/components/waterfall',
-                    '/components/toast',
-                    '/components/collapse',
-                    '/components/pager',
-                    '/components/sticky',
-                    '/components/captcha',
-                    '/components/table',
-                    '/components/slides',
-                    '/components/uploader',
-                    '/components/popover',
-                    '/components/cascader',
                 ]
             }
 

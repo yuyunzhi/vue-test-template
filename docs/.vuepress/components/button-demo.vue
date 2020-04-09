@@ -1,8 +1,6 @@
 <template>
   <div class="box">
     <y-button class="button">按钮</y-button>
-    <y-button icon="shezhi1" icon-position="right" class="button">按钮</y-button>
-    <y-button :loading="isLoading" @click="isLoading=!isLoading" class="button">按钮</y-button>
     <y-button disabled class="disabled button" >按钮</y-button>
     <br>
     <y-button-group>
@@ -15,8 +13,8 @@
 </template>
 
 <script>
-  import Button from '../../../src/button/button'
-  import buttonGroup from '../../../src/button/button-group'
+  import Button from '../../../src/components/button/button'
+  import buttonGroup from '../../../src/components/button/button-group'
 
   export default {
     components: {
@@ -28,8 +26,6 @@
         isLoading:true,
         content: `
 <y-button>按钮</y-button>
-<y-button icon="shezhi1" icon-position="right">按钮</y-button>
-<y-button :loading="isLoading" @click="isLoading=!isLoading">按钮</y-button>
 <y-button disabled class="disabled">按钮</y-button>
 <y-button-group>
     <y-button icon="left">上一页</y-button>
