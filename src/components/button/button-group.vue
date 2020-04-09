@@ -5,17 +5,17 @@
 </template>
 
 <script>
-    export default {
-        name:'YButtonGroup',
-        mounted(){
-            for(let node of this.$el.children){
-                let name = node.nodeName.toLowerCase();
-                if(name !== 'button'){
-                    console.warn(`y-button-group 的子元素应该全是 y-button,但你写的是${name}`)
-                }
-            }
-        }
+export default {
+  name: 'YButtonGroup',
+  mounted () {
+    for (const node of this.$el.children) {
+      const name = node.nodeName.toLowerCase()
+      if (name !== 'button') {
+        console.warn(`y-button-group 的子元素应该全是 y-button,但你写的是${name}`)
+      }
     }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

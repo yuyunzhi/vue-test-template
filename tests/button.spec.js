@@ -7,7 +7,7 @@ describe('Button.vue', () => {
     expect(Button).to.exist
   })
 
-  it('可以设置disable',()=>{
+  it('可以设置disable', () => {
     const wrapper = shallowMount(Button, {
       propsData: { disabled: true }
     })

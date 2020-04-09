@@ -7,35 +7,35 @@
   </button>
 </template>
 <script>
-  export default {
-    name: 'YButton',
-    props: {
-      icon: {},
-      loading: {
-        type: Boolean,
-        default: false
-      },
-      disabled: {
-        type: Boolean,
-        default: false
-      },
-      iconPosition: {
-        type: String,
-        default: 'left',
-        validator (value) {
-          return value === 'left' || value === 'right'
-        }
-      }
+export default {
+  name: 'YButton',
+  props: {
+    icon: {},
+    loading: {
+      type: Boolean,
+      default: false
     },
-    computed: {
-      classes () {
-        return {
-          [`icon-${this.iconPosition}`]: true,
-          disabled: this.disabled
-        }
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    iconPosition: {
+      type: String,
+      default: 'left',
+      validator (value) {
+        return value === 'left' || value === 'right'
+      }
+    }
+  },
+  computed: {
+    classes () {
+      return {
+        [`icon-${this.iconPosition}`]: true,
+        disabled: this.disabled
       }
     }
   }
+}
 </script>
 <style lang="scss" scoped>
   $button-height: 32px;
@@ -125,5 +125,3 @@
     }
   }
 </style>
-
-
